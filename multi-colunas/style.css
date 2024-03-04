@@ -36,6 +36,7 @@ html {
 .card {
     flex-basis: 250px;
     padding: 0;
+    align-content: flex-start;
 }
 .img {
     width: 250px;
