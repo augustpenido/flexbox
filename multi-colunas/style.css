@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+html {
+    background-image: linear-gradient(#EF6024, #F0941F);
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container>* {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container>*:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    padding: 0;
+}
+.img {
+    width: 250px;
+    height: 200px;
+    background: url(../japao.webp) top center/cover;
+}
+
+.card_content {
+    text-align: left;
+    padding: 10px;
+}
