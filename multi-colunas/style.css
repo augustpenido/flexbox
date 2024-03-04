@@ -29,12 +29,12 @@ html {
 
 .container {
     display: flex;
-    width: 100vw;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    width: 250px;
+    flex-basis: 250px;
     padding: 0;
 }
 .img {
@@ -46,4 +46,21 @@ html {
 .card_content {
     text-align: left;
     padding: 10px;
+}
+
+@media screen and (max-width: 840px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card {
+        display: flex;
+        flex-basis: 300px;
+        flex-direction: column;
+        margin: 20px 100px;
+    }
+    .img {
+        height: 300px;
+        width: 300px;
+    }
 }
